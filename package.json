@@ -5,8 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx serve & babel --watch src --out-dir ./dist",
-    "build": "babel src --out-dir ./dist"
+    "start": "npx serve & npx babel --watch src --out-dir ./dist",
+    "build": "npx babel src --out-dir ./dist"
   },
   "keywords": [],
   "author": "",
