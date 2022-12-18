@@ -183,4 +183,11 @@ export const OPfacts = [
         arc: sagas.water7.arcs.enniesLobby,
         cardTheme: 'vivre-plain'
     },
+    {
+        title: 'Zoro spent his childhood in Shimotsuki village',
+        description: 'The village is named after Shimotsuki Kozaburo (Wano Swordsmith)',
+        saga: sagas.wanoCountry,
+        arc: sagas.wanoCountry.arcs.wanoCountry,
+        cardTheme: 'vivre-plain'
+    },
 ];
