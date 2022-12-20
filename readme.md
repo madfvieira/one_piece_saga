@@ -12,8 +12,14 @@ to be remembered of little gems that have occurred throughout the saga that I've
 forgotten about or my memory is a bit hazy on.  Hopefully others can find it useful.
 
 ••• Technical notes:
-The application is served with node.js 14.20.1, JSX and react will be used
+The application is served with node.js 14.20.1, Babel, JSX and react will be used
 to build the necessary web components.
+
+Spin up DEV local server to host the app:
+• npm run start
+
+Compile the JSX into browser compatible JS with:
+• npx babel src --out-dir dist
 
 ••• One Piece Saga creator:
 Miguel Vieira, https://mafv.co.uk
