@@ -22,7 +22,8 @@ const appStyles = `
     #app .op_card_wrapper {
       background: #fff;
       padding: 12px;
-      width: 300px;
+      max-width: 300px;
+      width: 100%;
     }
     #app .op_card_title {
       margin-top: 0;
