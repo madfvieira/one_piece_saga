@@ -1,7 +1,3 @@
-import classNames from './classNames.js';
-
-const OPcard = classNames.OPcard;
-
 const appStyles = `
     * {
       box-sizing: border-box
@@ -23,12 +19,12 @@ const appStyles = `
       align-content: space-between;
       grid-gap: 15px;
     }
-    #app .${OPcard.wrapper} {
+    #app .op_card_wrapper {
       background: #fff;
       padding: 12px;
       width: 300px;
     }
-    #app .${OPcard.title} {
+    #app .op_card_title {
       margin-top: 0;
     }
 `;

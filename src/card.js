@@ -1,5 +1,3 @@
-import classNames from './classNames.js';
-
 const Card = ({
     title,
     description,
@@ -7,12 +5,11 @@ const Card = ({
     arc,
     theme
 }) => {
-    const clx = classNames.OPcard;
     return (
-        <div className={clx.wrapper}>
-            <h3 className={clx.title}>{title}</h3>
-            <p className={clx.description}>{description}</p>
-            <strong className={clx.saga_and_arc}>{saga.title} - {arc.title}</strong>
+        <div className="op_card_wrapper">
+            <h3 className="op_card_title">{title}</h3>
+            <p className="op_card_description">{description}</p>
+            <strong className="op_card_saga_and_arc">{saga.title} - {arc.title}</strong>
         </div>
     );
 };
