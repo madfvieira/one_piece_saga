@@ -1,5 +1,5 @@
 import { getOPCards } from './OPcards.js';
-import styles from './styles.js';
+import styles from './styles.jsx';
 
 const appEl = document.getElementById('app');
 const root  = ReactDOM.createRoot(appEl);
