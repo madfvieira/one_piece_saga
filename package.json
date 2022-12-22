@@ -5,8 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx serve & npx babel --watch src --out-dir ./dist",
-    "build": "npx babel src --out-dir ./dist"
+    "start": "npx serve & npx webpack --config webpack.config.js --mode=development --watch",
+    "build": "npx webpack --config webpack.config.js --mode=production"
   },
   "keywords": [],
   "author": "",
