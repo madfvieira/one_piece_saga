@@ -8,6 +8,7 @@ const appStyles = `
       margin: 0;
     }
     #app {
+      color: #FFF;
       width: 100%;
       height: 100%;
       background: #000;
