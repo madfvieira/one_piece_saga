@@ -10,6 +10,7 @@ const ModesList = ({modes}) => {
                         id={mode.id}
                         name={mode.name}
                         onClick={mode.onClick}
+                        key={`ReactElm_${mode.id}`}
                     >
                     </TabOption>
                 );

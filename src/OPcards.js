@@ -14,6 +14,7 @@ export const getOPCards = () => {
                         description={fact.description}
                         saga={fact.saga}
                         arc={fact.arc}
+                        key={`ReactElm_${index}`}
                     >
                     </Card>
                 );
