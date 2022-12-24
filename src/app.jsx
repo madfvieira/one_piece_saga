@@ -1,3 +1,5 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
 import { getOPCards } from './OPcards.js';
 import { ModePicker } from './modePicker.jsx';
 import styles from './styles.jsx';

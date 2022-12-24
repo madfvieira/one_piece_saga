@@ -1,3 +1,4 @@
+import React from 'react';
 import TabOption from './TabOption.jsx';
 
 const ModesList = ({modes}) => {
