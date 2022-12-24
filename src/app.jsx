@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {createRoot} from 'react-dom/client';
 import { getOPCards } from './OPcards.js';
 import { ModePicker } from './modePicker.jsx';
 import styles from './styles.jsx';
 
 const appEl = document.getElementById('app');
-const root  = ReactDOM.createRoot(appEl);
+const root  = createRoot(appEl);
 
 const OPcards = getOPCards();
 
