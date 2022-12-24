@@ -21,6 +21,7 @@ const appStyles = `
       grid-gap: 15px;
     }
     #app .op_card_wrapper {
+      color: #000;
       background: #fff;
       padding: 12px;
       max-width: 300px;
