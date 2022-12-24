@@ -1,4 +1,4 @@
-const sagas = {
+export const sagas = {
     eastBlue: {
         title: 'East Blue',
         arcs: {
