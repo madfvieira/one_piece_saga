@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import {createRoot} from 'react-dom/client';
 import { getOPCards } from './OPcards.js';
 import { ModePicker } from './modePicker.jsx';
+import { sagas } from './config.js';
 import styles from './styles.jsx';
 
 const appEl = document.getElementById('app');
@@ -19,6 +20,21 @@ const insertAppStyles = (CssStyles) => {
 const renderAllCards = () => {
     root.render(
         <>
+            <label>
+                Sagas:
+            </label>
+            <ModePicker
+                modes={
+                    Object.values(sagas).map( (saga, index) => {
+                        const sagaKey = Object.keys(sagas)[index];
+                        return (
+                            { id: sagaKey, name: saga.title, value: sagaKey }
+                        );
+                    })
+                }
+            >
+            </ModePicker>
+
             <ModePicker
                 modes={
                     [

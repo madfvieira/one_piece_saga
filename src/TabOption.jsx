@@ -1,13 +1,23 @@
-import React from 'react';
+import React, { useState} from 'react';
+
 const TabOption = ({
     id,
     name,
-    onClick,
+    onBtnClick,
 }) => {
+    const [active, setActive] = useState(false);
+
+    const toggleActive = () => {
+        setActive(!active);
+    };
+
     return (
         <button
             id={id}
-            onClick={onClick}
+            style={{
+                backgroundColor: active ? '#8484ff' : ''
+            }}
+            onClick={toggleActive}
         >
             {name}
         </button>

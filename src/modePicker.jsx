@@ -1,7 +1,15 @@
 import React from 'react';
 import TabOption from './TabOption.jsx';
 
-const ModesList = ({modes}) => {
+const ModesList = ({
+    modes,
+    allowMulti
+}) => {
+    const btnOnClick = (btn) => {
+        if (allowMulti) {
+        }
+    };
+
     return (
         <>
             {modes.map( (mode, index) => {
@@ -9,7 +17,7 @@ const ModesList = ({modes}) => {
                     <TabOption
                         id={mode.id}
                         name={mode.name}
-                        onClick={mode.onClick}
+                        onBtnClick={btnOnClick}
                         key={`ReactElm_${mode.id}`}
                     >
                     </TabOption>
