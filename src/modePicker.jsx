@@ -5,11 +5,6 @@ const ModesList = ({
     modes,
     allowMulti
 }) => {
-    const btnOnClick = (btn) => {
-        if (allowMulti) {
-        }
-    };
-
     return (
         <>
             {modes.map( (mode, index) => {
@@ -17,7 +12,6 @@ const ModesList = ({
                     <TabOption
                         id={mode.id}
                         name={mode.name}
-                        onBtnClick={btnOnClick}
                         key={`ReactElm_${mode.id}`}
                     >
                     </TabOption>

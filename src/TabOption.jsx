@@ -1,15 +1,13 @@
 import React, { useState} from 'react';
+import { connect } from 'react-redux';
 
 const TabOption = ({
     id,
     name,
-    onBtnClick,
+    addFilter,
+    removeFilter,
 }) => {
     const [active, setActive] = useState(false);
-
-    const toggleActive = () => {
-        setActive(!active);
-    };
 
     return (
         <button
@@ -17,11 +15,43 @@ const TabOption = ({
             style={{
                 backgroundColor: active ? '#8484ff' : ''
             }}
-            onClick={toggleActive}
+            onClick={() => {
+                setActive(!active);
+                if (active) {
+                    removeFilter(id);
+                } else {
+                    addFilter(id);
+                }
+            }}
         >
             {name}
         </button>
     );
 };
 
-export default TabOption;
+const mapStateToProps = (state) => {
+    return ({
+        filterOPfacts: state.filterOPfacts,
+    });
+};
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        addFilter: (saga) => {
+            return (
+                dispatch(
+                    { type: 'ADD_FILTER_OP_SAGA', payload: { 'saga': saga } }
+                )
+            );
+        },
+        removeFilter: (saga) => {
+            return (
+                dispatch(
+                    { type: 'REMOVE_FILTER_OP_SAGA', payload: { 'saga': saga } }
+                )
+            );
+        },
+    };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(TabOption);
