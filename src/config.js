@@ -1,5 +1,6 @@
 export const sagas = {
     eastBlue: {
+        id: 'eastBlue',
         title: 'East Blue',
         arcs: {
             romanceDawn: {
@@ -26,6 +27,7 @@ export const sagas = {
         }
     },
     arabasta: {
+        id: 'arabasta',
         title: 'Arabasta',
         arcs: {
             reverseMountain: {
@@ -46,6 +48,7 @@ export const sagas = {
         }
     },
     skyIsland: {
+        id: 'skyIsland',
         title: 'Sky Island',
         arcs: {
             jaya: {
@@ -57,6 +60,7 @@ export const sagas = {
         }
     },
     water7: {
+        id: 'water7',
         title: 'Water 7',
         arcs: {
             longRingLongLand: {
@@ -74,6 +78,7 @@ export const sagas = {
         }
     },
     thrillerBark: {
+        id: 'thrillerBark',
         title: 'Thriller Bark',
         arcs: {
             thrillerBark: {
@@ -82,6 +87,7 @@ export const sagas = {
         }
     },
     summitWar: {
+        id: 'summitWar',
         title: 'Summit War',
         arcs: {
             sabaodyArchipelago: {
@@ -102,6 +108,7 @@ export const sagas = {
         }
     },
     fishManIsland: {
+        id: 'fishManIsland',
         title: 'Fish-Man Island',
         arcs: {
             returnToSabaody: {
@@ -113,6 +120,7 @@ export const sagas = {
         }
     },
     dressrosa: {
+        id: 'dressrosa',
         title: 'Dressrosa',
         arcs: {
             punkHazard: {
@@ -124,6 +132,7 @@ export const sagas = {
         }
     },
     wholeCakeIsland: {
+        id: 'wholeCakeIsland',
         title: 'Whole Cake Island',
         arcs: {
             zou: {
@@ -138,6 +147,7 @@ export const sagas = {
         }
     },
     wanoCountry: {
+        id: 'wanoCountry',
         title: 'Wano Country',
         arcs: {
             wanoCountry: {
