@@ -42,15 +42,6 @@ const renderAllCards = () => {
                 >
                 </ModePicker>
 
-                <ModePicker
-                    modes={
-                        [
-                            { id:'full', name:'All at once', value: 'full' },
-                            { id:'one_at_time', name:'1 at the time', value: 'one_at_time' },
-                        ]
-                    }
-                >
-                </ModePicker>
                 <OPfactsWrapper />
             </>
         </Provider>
