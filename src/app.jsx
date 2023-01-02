@@ -27,9 +27,6 @@ const renderAllCards = () => {
     root.render(
         <Provider store={store}>
             <>
-                <label>
-                    Sagas:
-                </label>
                 <ModePicker
                     modes={
                         Object.values(sagas).map( (saga, index) => {
