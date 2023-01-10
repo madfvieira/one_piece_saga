@@ -9,6 +9,8 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import rootReducer from './reducers';
 
+const spurious = 'spurious'; // just a spurious change to trigger deploy
+
 import styles from './styles.jsx';
 
 const appEl = document.getElementById('app');
