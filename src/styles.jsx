@@ -13,12 +13,15 @@ const appStyles = `
       height: 100%;
       background: #000;
       overflow: auto;
-      padding: 15px;
       font-family: 'Helvetica', sans-serif;
       display: grid;
-      justify-content: space-around;
-      align-content: space-between;
+      align-content: start;
       grid-gap: 15px;
+    }
+    #app .op_mode_picker_wrapper button {
+      background: #0072a2;
+      color: white;
+      padding: 10px;
     }
     #app .op_card_wrapper {
       color: #000;

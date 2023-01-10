@@ -13,7 +13,7 @@ const TabOption = ({
         <button
             id={id}
             style={{
-                backgroundColor: active ? '#8484ff' : ''
+                backgroundColor: active ? '#00364c' : ''
             }}
             onClick={() => {
                 setActive(!active);
